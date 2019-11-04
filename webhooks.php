@@ -45,8 +45,9 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 
 			echo $result . "\r\n";
+			echo "<br>" + $text;
 		}
 	}
 }
-else {echo "Event is NULL.\r\n";}
+else {echo "Event is NULL.<br>";}
 echo "OK";
