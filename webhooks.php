@@ -7,10 +7,11 @@ $access_token = 'ZWHqnexkkPRaWHDsvDneF7O1Nd/EsnAH0yECTARq/4GMQbejYMfgy81TxudEK2p
 
 // Get POST body content
 $content = file_get_contents('php://input');
+$text = $content . "\r\n";
 // Parse JSON
 $events = json_decode($content, true);
 // Validate parsed JSON data
-if (!is_null($events['events'])) { $text = $content;
+if (!is_null($events['events'])) { 
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
