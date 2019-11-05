@@ -50,4 +50,4 @@ if (!is_null($events['events'])) {
 	}
 }
 else {echo "Event is NULL.<br>";}
-echo "OK";
+echo "-OK-";
